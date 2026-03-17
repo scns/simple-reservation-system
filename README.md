@@ -1,13 +1,4 @@
 === Simple Reservation System ===
-Contributors: scns
-Donate link: https://wppluginfactory.nl/
-Tags: reservations, booking, calendar, appointments, ical
-Requires at least: 5.8
-Tested up to: 6.9
-Requires PHP: 7.4
-Stable tag: 2.5.2
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 A complete reservation and booking system with an interactive calendar, iCal integration, and capacity-aware scheduling.
 
