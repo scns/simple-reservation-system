@@ -1,0 +1,49 @@
+name: "✨ Feature request"
+description: "Stel een nieuwe functie of verbetering voor"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt voor je idee! Beschrijf het zo concreet mogelijk.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Probleem of behoefte
+      description: Welk probleem lost deze feature op, of welke wens heb je?
+      placeholder: |
+        Het is lastig om… / Ik wil graag dat…
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Gewenste oplossing
+      description: Hoe zou jij het willen zien werken?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatieven overwogen
+      description: Heb je andere oplossingen of work-arounds geprobeerd?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioriteit (jouw inschatting)
+      options:
+        - Laag — nice-to-have
+        - Gemiddeld — zou helpen
+        - Hoog — blokkeert mijn gebruik
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context / mockups
+      description: Screenshots, schetsjes of andere achtergrond zijn welkom.

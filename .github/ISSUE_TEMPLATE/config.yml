@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentatie
+    url: https://www.wppluginfactory.nl/reservation-system/
+    about: Bekijk de volledige documentatie op onze website.
+  - name: 💬 Ondersteuningsforum
+    url: https://www.wppluginfactory.nl/support/
+    about: Snel antwoord nodig? Bezoek ons ondersteuningsforum.

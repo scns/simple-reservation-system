@@ -1,0 +1,75 @@
+name: "🐛 Bug report"
+description: "Iets werkt niet zoals verwacht"
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt voor het melden van een bug! Vul het formulier zo volledig mogelijk in.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschrijving
+      description: Wat gaat er mis? Wat had je verwacht?
+      placeholder: |
+        Bij het opslaan van een reservering krijg ik een foutmelding…
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Stappen om te reproduceren
+      description: Hoe kunnen we de bug zelf zien?
+      placeholder: |
+        1. Ga naar …
+        2. Klik op …
+        3. Zie foutmelding …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Verwacht gedrag
+      description: Wat had er moeten gebeuren?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / foutmeldingen
+      description: Plak hier eventuele screenshots of de volledige foutmelding (inclusief stack trace).
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin versie
+      placeholder: "bijv. 2.5.8"
+    validations:
+      required: true
+
+  - type: input
+    id: wp_version
+    attributes:
+      label: WordPress versie
+      placeholder: "bijv. 6.7"
+    validations:
+      required: true
+
+  - type: input
+    id: php_version
+    attributes:
+      label: PHP versie
+      placeholder: "bijv. 8.2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Overige omgevingsinformatie
+      description: Actieve andere plugins, thema, hostingomgeving, etc.
+      placeholder: "Thema: Astra | Hosting: TransIP Stack"

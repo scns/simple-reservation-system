@@ -1,0 +1,30 @@
+name: "❓ Vraag / ondersteuning"
+description: "Stel een vraag over het gebruik van de plugin"
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Heb je een vraag over de configuratie of het gebruik van de plugin? Stel hem hier.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Jouw vraag
+      description: Beschrijf zo concreet mogelijk wat je wilt weten of bereiken.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: Wat heb je al geprobeerd?
+      description: Beschrijf wat je al hebt geprobeerd of welke documentatie je hebt geraadpleegd.
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin versie
+      placeholder: "bijv. 2.5.8"
+    validations:
+      required: true
