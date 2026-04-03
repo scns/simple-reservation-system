@@ -5,7 +5,7 @@ Tags: reservations, booking, calendar, appointments, ical
 Requires at least: 6.2
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.5.6
+Stable tag: 2.5.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -262,6 +262,9 @@ Under **Reservations > Settings > Cancellation**, you can:
 8. Mobile responsive list view
 
 == Changelog ==
+
+= 2.5.7 =
+* Added: Automatic update support — the plugin now notifies WordPress of new releases published on GitHub and can be updated directly from Dashboard → Updates
 
 = 2.5.6 =
 * Fixed: Release pipeline now correctly publishes to public repo in a single workflow (resolves trigger limitation with GITHUB_TOKEN)
