@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4fa8ec"/>
+      <stop offset="100%" stop-color="#1a5fa8"/>
+    </linearGradient>
+    <linearGradient id="check" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d470"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App icon background -->
+  <rect width="256" height="256" rx="52" fill="url(#bg)"/>
+
+  <!-- Calendar card (white) -->
+  <rect x="30" y="68" width="196" height="158" rx="14" fill="white"/>
+
+  <!-- Calendar header bar -->
+  <rect x="30" y="68" width="196" height="54" rx="14" fill="#1a5fa8"/>
+  <rect x="30" y="96" width="196" height="26" fill="#1a5fa8"/>
+
+  <!-- Binding ring left -->
+  <rect x="78" y="48" width="20" height="44" rx="10" fill="white"/>
+  <!-- Binding ring right -->
+  <rect x="158" y="48" width="20" height="44" rx="10" fill="white"/>
+
+  <!-- Calendar grid — row 1 -->
+  <rect x="46"  y="140" width="24" height="10" rx="5" fill="#c5ddf5"/>
+  <rect x="88"  y="140" width="24" height="10" rx="5" fill="#c5ddf5"/>
+  <rect x="130" y="140" width="24" height="10" rx="5" fill="#3788d8"/>
+  <rect x="172" y="140" width="24" height="10" rx="5" fill="#c5ddf5"/>
+
+  <!-- Calendar grid — row 2 -->
+  <rect x="46"  y="162" width="24" height="10" rx="5" fill="#c5ddf5"/>
+  <rect x="88"  y="162" width="24" height="10" rx="5" fill="#3788d8"/>
+  <rect x="130" y="162" width="24" height="10" rx="5" fill="#c5ddf5"/>
+  <rect x="172" y="162" width="24" height="10" rx="5" fill="#c5ddf5"/>
+
+  <!-- Calendar grid — row 3 -->
+  <rect x="46"  y="184" width="24" height="10" rx="5" fill="#c5ddf5"/>
+  <rect x="88"  y="184" width="24" height="10" rx="5" fill="#c5ddf5"/>
+
+  <!-- Checkmark badge -->
+  <circle cx="178" cy="192" r="34" fill="url(#check)"/>
+  <circle cx="178" cy="192" r="34" fill="white" opacity="0.12"/>
+  <path d="M162 192 l12 12 l24 -24"
+        stroke="white" stroke-width="6.5"
+        stroke-linecap="round" stroke-linejoin="round"
+        fill="none"/>
+</svg>
