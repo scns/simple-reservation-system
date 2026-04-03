@@ -5,7 +5,7 @@ Tags: reservations, booking, calendar, appointments, ical
 Requires at least: 6.2
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.6.1
+Stable tag: 2.6.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -262,6 +262,10 @@ Under **Reservations > Settings > Cancellation**, you can:
 8. Mobile responsive list view
 
 == Changelog ==
+
+= 2.6.2 =
+* Fixed: Auto-update toggle now correctly appears in the Plugins list when the plugin is up to date
+* Fixed: Removed stale `simple-reservation-system.php` entry point that caused WordPress to detect the wrong plugin name and version
 
 = 2.6.1 =
 * Added: Plugin icon — a calendar with a checkmark badge, shown in WordPress Dashboard → Updates and the plugin detail popup
