@@ -5,7 +5,7 @@ Tags: reservations, booking, calendar, appointments, ical
 Requires at least: 6.2
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.6.2
+Stable tag: 2.7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -262,6 +262,15 @@ Under **Reservations > Settings > Cancellation**, you can:
 8. Mobile responsive list view
 
 == Changelog ==
+
+= 2.7.0 =
+* Added: Nieuwe resource toegangsmode "zichtbaar voor iedereen, reserveerbaar voor geselecteerde gebruikers" (Full license)
+* Changed: Resource toegangscontrole gesplitst in zichtbaarheid (`user_can_view`) en reserveringsrecht (`user_can_book`) voor consistente permissies
+* Changed: REST API gebruikt nu aparte checks voor zichtbaarheid en boekrechten (events vs slots/create)
+* Added: Admin resourcebeheer ondersteunt nu 3 toegangsmodi (iedereen, verborgen, view-only)
+* Added: Frontend verbergt reserveeracties voor gebruikers zonder reserveringsrechten op view-only resources
+* Added: Eenmalige migratie van legacy boolean `restrict_access` waarden naar expliciete toegangsmodes
+* Fixed: Persoonlijke iCal feed respecteert nu resource-zichtbaarheidsregels
 
 = 2.6.2 =
 * Fixed: Auto-update toggle now correctly appears in the Plugins list when the plugin is up to date
