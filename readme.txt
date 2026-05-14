@@ -5,7 +5,7 @@ Tags: reservations, booking, calendar, appointments, ical
 Requires at least: 6.2
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.7.0
+Stable tag: 2.7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -263,6 +263,12 @@ Under **Reservations > Settings > Cancellation**, you can:
 
 == Changelog ==
 
+= 2.7.1 =
+* Added: Op shortcode-pagina `[wppluginfactory_my_reservations]` worden reserveringen nu standaard gefilterd op de actuele maand
+* Added: Maand- en jaarnavigator (vorige/volgende + dropdown) om snel tussen maanden en jaren te schakelen in "Mijn Reserveringen"
+* Changed: REST endpoint `my-reservations` ondersteunt nu maand/jaar-parameters en gebruikt standaard actuele maandfiltering
+* Fixed: Tijdzone-afwijking in .ics e-mailbijlage opgelost (bijlage gebruikt nu dezelfde WordPress-tijdzoneconversie als de iCal-feed, waardoor +2 uur verschil verdwijnt)
+
 = 2.7.0 =
 * Added: Nieuwe resource toegangsmode "zichtbaar voor iedereen, reserveerbaar voor geselecteerde gebruikers" (Full license)
 * Changed: Resource toegangscontrole gesplitst in zichtbaarheid (`user_can_view`) en reserveringsrecht (`user_can_book`) voor consistente permissies
@@ -423,6 +429,9 @@ Under **Reservations > Settings > Cancellation**, you can:
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.7.1 =
+Verbeterde "Mijn Reserveringen" met maand/jaar-navigatie en standaardfilter op actuele maand.
 
 = 2.5.3-beta2 =
 Beta 2 release.
