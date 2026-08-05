@@ -5,7 +5,7 @@ Tags: reservations, booking, calendar, appointments, ical
 Requires at least: 6.2
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.7.1
+Stable tag: 2.7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -263,6 +263,10 @@ Under **Reservations > Settings > Cancellation**, you can:
 
 ## Changelog
 
+### 2.7.2
+* Fixed: Capaciteitsberekening voor gedeelde tijdsloten gebruikt nu piek gelijktijdige bezetting in plaats van optelsom over overlappende periodes
+* Fixed: Tussentijdse slots tonen nu correct beschikbare plekken (bijv. 2/3 vrij) wanneer boekingen elkaar opvolgen maar niet tegelijk plaatsvinden
+
 ### 2.7.1
 * Added: Op shortcode-pagina `[wppluginfactory_my_reservations]` worden reserveringen nu standaard gefilterd op de actuele maand
 * Added: Maand- en jaarnavigator (vorige/volgende + dropdown) om snel tussen maanden en jaren te schakelen in "Mijn Reserveringen"
@@ -429,6 +433,9 @@ Under **Reservations > Settings > Cancellation**, you can:
 * Initial release
 
 ## Upgrade Notice
+
+### 2.7.2
+Fix voor capaciteit in gedeelde tijdsloten: tussenslots tonen nu het juiste aantal vrije plekken.
 
 ### 2.7.1
 Verbeterde "Mijn Reserveringen" met maand/jaar-navigatie en standaardfilter op actuele maand.
